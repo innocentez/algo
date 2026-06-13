@@ -1,0 +1,20 @@
+{
+  "$schema": "https://raw.githubusercontent.com/jetify-com/devbox/0.17.3/.schema/devbox.schema.json",
+  "packages": [
+    "go@1.26",
+    "gopls",
+    "delve",
+    "golangci-lint"
+  ],
+  "env": {
+    "GOBIN": "$PWD/bin",
+    "PATH": "$PWD/bin:$PATH"
+  },
+  "shell": {
+    "scripts": {
+      "test":            ["cd .. && go test ./..."],
+      "fmt":             ["cd .. && go fmt ./..."],
+      "tidy":            ["cd .. && go mod tidy"],
+    }
+  }
+}
