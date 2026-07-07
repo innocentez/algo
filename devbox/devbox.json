@@ -14,7 +14,7 @@
     "scripts": {
       "test":            ["cd .. && go test ./..."],
       "fmt":             ["cd .. && go fmt ./..."],
-      "tidy":            ["cd .. && go mod tidy"],
+      "tidy":            ["cd .. && go mod tidy"]
     }
   }
 }
